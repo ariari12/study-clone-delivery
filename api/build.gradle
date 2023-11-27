@@ -35,3 +35,11 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+//스프링 부트로 실행할것이므로 부트jar는 true
+bootJar{
+    enabled=true
+}
+jar{
+    enabled=false
+}

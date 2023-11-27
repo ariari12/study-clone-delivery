@@ -34,3 +34,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+//JAR 파일은 주로 라이브러리 또는 모듈을 패키징하는 데 사용됩니다.
+// 실행 가능한 애플리케이션이 아니며, 다른 프로젝트에서 사용할 수 있는 라이브러리 형태로 제공됩니다.
+bootJar{
+    enabled=false
+}
+jar{
+    enabled=true
+}
