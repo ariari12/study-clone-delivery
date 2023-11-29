@@ -18,13 +18,15 @@ import java.time.LocalDateTime;
 public class AccountApiController {
 
     private final AccountRepository accountRepository;
-    @GetMapping("me")
+    @GetMapping("/me")
     public Api<AccountMeResponse> me(){
         var response = AccountMeResponse.builder()
                 .name("홍길동")
                 .email("A@gmail.com")
                 .registeredAt(LocalDateTime.now())
                 .build();
+        var str = "안녕하세요";
+        var age = Integer.parseInt(str);
         return Api.OK(response);
     }
 }

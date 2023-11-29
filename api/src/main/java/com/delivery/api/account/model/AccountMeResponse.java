@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
-
 public class AccountMeResponse {
     private String name;
     private String email;
